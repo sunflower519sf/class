@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Example</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <a>六</a>
+    <template id="input-template">
+        
+        <input type="text" placeholder="座號" class="site-in">
+        </template>
+        
+        <div id="inputs"></div>
+        
+        <script>
+            const template = document.querySelector('#input-template');
+            const container = document.querySelector('#inputs');
+            // 在 for 迴圈中產生多個輸入框
+            for (let i = 0; i < 8; i++) {
+                const clone = document.importNode(template.content, true);
+                container.appendChild(clone);
+            }
+        </script>
+  </body>
+</html>

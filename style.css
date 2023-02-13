@@ -1,0 +1,15 @@
+#p1{
+    position:absolute;
+    left: 29px;
+}
+
+.site-in{
+    width:40px; 
+    height:20px;
+    
+}
+
+#reset-button{
+    position:absolute;
+    left: 380px;
+}

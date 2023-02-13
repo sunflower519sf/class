@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>表格測試</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <form>
+            <div>
+                <h2>請在底下輸入班級位置資訊</h2>
+
+                
+                
+                <template id="input-template">
+                <a>六</a>
+                <input type="text" placeholder="座號" class="site-in">
+                </template>
+                
+                <div id="inputs"></div>
+                
+                <script>
+                    const template = document.querySelector('#input-template');
+                    const container = document.querySelector('#inputs');
+                    // 在 for 迴圈中產生多個輸入框
+                    for (let i = 0; i < 8; i++) {
+                        const clone = document.importNode(template.content, true);
+                        container.appendChild(clone);
+                    }
+                </script>
+                <br/>
+
+                <a>五</a> 
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <br/>
+
+                <a>四</a>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <input type="text" placeholder="座號" class="site-in"/>
+                <br/>
+
+                <a>三</a>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>  
+                <br/>
+
+                <a>二</a>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <br/>
+
+                <a>一</a>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <input type="text" placeholder="座號"  class="site-in"/>
+                <br/>
+
+
+
+                <a id="p1">第一排 第二排 第三排 第四排 第五排 第六排 第七排 第八排</a><br/>
+                <input type="reset" value="清除資料", id="reset-button"/>
+            </div>
+        </form>
+    </body>
+</html>
